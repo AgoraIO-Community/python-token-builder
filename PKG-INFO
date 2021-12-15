@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: agora_token_builder
+Version: 2.2.5
+Summary: Agora Token Builder. RTC & RTM
+Home-page: UNKNOWN
+Author: Dennis
+Author-email: <dennis@agora.io>
+License: UNKNOWN
+Keywords: python,agora,token-builder
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Agora Token Generator
+
+
+# Description 
+Token generator for building a token server with Python & the Agora RTM & RTC
+
+## Installation
+```pip install agora-token-server```
+
+## How to use it?
+
+###### Importing for RTC
+```from agora_token_builder import RtcTokenBuilder```
+
+###### Importing for RTM
+```from agora_token_builder import RtmTokenBuilder```
+
+## License
+
+Â© 2021 Agora.io
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
+
