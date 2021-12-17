@@ -16,7 +16,11 @@ Token generator for building a token server with Python & the Agora RTM/RTC
 ```from agora_token_builder import RtcTokenBuilder```
 
 ```python
+#Build token with uid
 token = RtcTokenBuilder.buildTokenWithUid(appID, appCertificate, uid, role, privilegeExpiredTs)
+
+#Build token with userAccount
+token = RtmTokenBuilder.buildTokenWithAccount(appId, appCertificate, channelName, account, role, privilegeExpiredTs)
 ```
 
 ###### RTM Real-Time Messaging & Chat SDK
@@ -26,6 +30,7 @@ token = RtcTokenBuilder.buildTokenWithUid(appID, appCertificate, uid, role, priv
 ```python
 token = RtmTokenBuilder.buildToken(appID, appCertificate, userAccount, role, privilegeExpiredTs)
 ```
+
 
 
 ## Settings
