@@ -9,56 +9,21 @@ Token generator for building a token server with Python & the Agora RTM/RTC
 
 ```pip install agora-token-server```
 
-## Building a token server
+## Usage
 ------------
 
-### 1. Import Token builder
-
-###### Importing for RTC Live Video Calling & Chat SDK
+###### RTC Live Video Calling & Chat SDK
 ```from agora_token_builder import RtcTokenBuilder```
 
-###### Importing for RTM Real-Time Messaging & Chat SDK
-```from agora_token_builder import RtmTokenBuilder```
-
-### 2. Use token builder with app credentials and set settings.
-
-### Rtc Token BuilderWith UID
-
-
 ```python
-
-#Example of token endpoint in a django view
-import time
-from agora_token_builder import RtcTokenBuilder
-
-appID = "YOUR APP ID AS A STRING"
-appCertificate = "YOUR APP CERTIFICATE AS A STRING"
-channelName = request.GET.get('channel')
-uid = "GENERATE SOME USER ID"
-expirationTimeInSeconds = 3600
-currentTimeStamp = int(time.time())
-privilegeExpiredTs = currentTimeStamp + expirationTimeInSeconds
-role = 1
-
 token = RtcTokenBuilder.buildTokenWithUid(appID, appCertificate, uid, role, privilegeExpiredTs)
 ```
 
-### Rtm Token Builder
+###### RTM Real-Time Messaging & Chat SDK
+```from agora_token_builder import RtmTokenBuilder```
+
 
 ```python
-
-#Example of token endpoint in a django view
-import time
-from agora_token_builder import RtmTokenBuilder
-
-appID = "YOUR APP ID AS A STRING"
-appCertificate = "YOUR APP CERTIFICATE AS A STRING"
-userAccount = "The user account."
-expirationTimeInSeconds = 3600
-currentTimeStamp = int(time.time())
-privilegeExpiredTs = currentTimeStamp + expirationTimeInSeconds
-role = 1
-
 token = RtmTokenBuilder.buildToken(appID, appCertificate, userAccount, role, privilegeExpiredTs)
 ```
 
