@@ -47,7 +47,7 @@ Unique channel name for the AgoraRTC session in the string format
 User ID. A 32-bit unsigned integer with a value ranging from 1 to (232-1). optionalUid must be unique.
 
 ```userAccount```
-The user account.
+A unique identifier used for to represent a user account. This value will be a string and can contain numbers, letters and any special characters.  
 
 ```role```
 <br>
