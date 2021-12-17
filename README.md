@@ -39,7 +39,7 @@ token = RtmTokenBuilder.buildToken(appID, appCertificate, userAccount, role, pri
 
 
 
-## Settings
+## Variable Definitions
 
 ```appID```
 <br>
