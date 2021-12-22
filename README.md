@@ -19,14 +19,14 @@ Build token with `int` UID:
 from agora_token_builder import RtcTokenBuilder
 
 #Build token with uid
-token = RtcTokenBuilder.buildTokenWithUid(appID, appCertificate, uid, role, privilegeExpiredTs)
+token = RtcTokenBuilder.buildTokenWithUid(appId, appCertificate, channelName, uid, role, privilegeExpiredTs)
 ```
 Build token with `string` UserAccount:
 ```python
 from agora_token_builder import RtcTokenBuilder
 
 #Build token with userAccount
-token = RtmTokenBuilder.buildTokenWithAccount(appId, appCertificate, channelName, account, role, privilegeExpiredTs)
+token = RtcTokenBuilder.buildTokenWithAccount(appId, appCertificate, channelName, account, role, privilegeExpiredTs)
 ```
 
 ###### RTM Real-Time Messaging & Chat SDK
