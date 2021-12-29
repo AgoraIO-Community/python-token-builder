@@ -13,7 +13,7 @@ README = (HERE / "README.md").read_text()
 
 # Setting up
 setup(
-    name="agora_python_token_builder",
+    name="agora_token_builder",
     version=VERSION,
     author="Dennis",
     author_email="<dennis@agora.io>",

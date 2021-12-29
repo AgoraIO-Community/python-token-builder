@@ -7,7 +7,7 @@ Token generator for building a token server with Python & the Agora RTM/RTC
 ## Installation
 ------------
 
-```pip install agora-token-server```
+```pip install agora-token-builder```
 
 ## Usage
 ------------

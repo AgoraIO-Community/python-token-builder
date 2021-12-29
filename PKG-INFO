@@ -24,7 +24,7 @@ License-File: LICENSE.txt
 Token generator for building a token server with Python & the Agora RTM & RTC
 
 ## Installation
-```pip install agora-token-server```
+```pip install agora-token-builder```
 
 ## How to use it?
 
